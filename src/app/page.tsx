@@ -382,7 +382,7 @@ export default function Home() {
             }}
           >
             <Image
-              src="/images/devrana-logo.jpeg"
+              src={images.logo}
               alt="Devrana Express Logo"
               fill
               style={{ objectFit: "cover" }}

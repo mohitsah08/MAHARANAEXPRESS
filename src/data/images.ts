@@ -1,17 +1,26 @@
+const basePath =
+  process.env.NEXT_PUBLIC_BASE_PATH !== undefined
+    ? process.env.NEXT_PUBLIC_BASE_PATH
+    : process.env.NODE_ENV === "production"
+    ? "/devrana-express-siwan"
+    : "";
+
+const asset = (path: string) => `${basePath}${path}`;
+
 const unsplash = (id: string, width = 1800) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=88`;
 
 export const images = {
-  logo: "/images/devrana-logo.jpeg",
-  hero: "/images/devrana-dining-hall.jpeg",
-  about: "/images/devrana-interior-window.jpeg",
+  logo: asset("/images/devrana-logo.jpeg"),
+  hero: asset("/images/devrana-dining-hall.jpeg"),
+  about: asset("/images/devrana-interior-window.jpeg"),
   kitchen: unsplash("photo-1555939594-58d7cb561ad1", 1200),
-  finalCta: "/images/devrana-anniversary.jpeg",
-  realInterior: "/images/devrana-dining-hall.jpeg",
-  realWindow: "/images/devrana-interior-window.jpeg",
-  realAnniversary: "/images/devrana-anniversary.jpeg",
-  realCelebration: "/images/devrana-celebration.jpeg",
-  realLogo: "/images/devrana-logo.jpeg",
+  finalCta: asset("/images/devrana-anniversary.jpeg"),
+  realInterior: asset("/images/devrana-dining-hall.jpeg"),
+  realWindow: asset("/images/devrana-interior-window.jpeg"),
+  realAnniversary: asset("/images/devrana-anniversary.jpeg"),
+  realCelebration: asset("/images/devrana-celebration.jpeg"),
+  realLogo: asset("/images/devrana-logo.jpeg"),
 
   menu: {
     paneerButterMasala: unsplash("photo-1631452180519-c014fe946bc7", 800),
@@ -42,27 +51,27 @@ export const images = {
 
   gallery: [
     {
-      src: "/images/devrana-dining-hall.jpeg",
+      src: asset("/images/devrana-dining-hall.jpeg"),
       tag: "restaurant",
       alt: "Spacious main dining hall with modern warm ambiance at Devrana Express Siwan",
     },
     {
-      src: "/images/devrana-logo.jpeg",
+      src: asset("/images/devrana-logo.jpeg"),
       tag: "restaurant",
       alt: "Devrana Express Siwan official illuminated royal logo badge",
     },
     {
-      src: "/images/devrana-interior-window.jpeg",
+      src: asset("/images/devrana-interior-window.jpeg"),
       tag: "dining",
       alt: "Comfortable family dining area with large windows at Devrana Express Siwan",
     },
     {
-      src: "/images/devrana-anniversary.jpeg",
+      src: asset("/images/devrana-anniversary.jpeg"),
       tag: "celebrations",
       alt: "Special anniversary celebration setup and private dining backdrop",
     },
     {
-      src: "/images/devrana-celebration.jpeg",
+      src: asset("/images/devrana-celebration.jpeg"),
       tag: "celebrations",
       alt: "Birthday party celebration with three-tier cake and balloon arch",
     },
