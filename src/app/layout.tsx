@@ -4,13 +4,14 @@ import { GA_MEASUREMENT_ID } from "@/config/business";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://devranaexpress.com"),
-  title: "Devrana Express Siwan | Restaurant in Siwan",
+  metadataBase: new URL("https://maharanaexpress.com"),
+  title: "MAHARANAEXPRESS | Restaurant in Siwan",
   description:
-    "Devrana Express Siwan is a restaurant in Siwan, Bihar serving Indian cuisine including paneer dishes, dal, rice and biryani.",
+    "MAHARANAEXPRESS is a premier family restaurant in Siwan, Bihar serving authentic North Indian cuisine including paneer dishes, dal, rice and biryani at Downtown City Square Mall.",
   keywords: [
-    "Devrana Express Siwan",
-    "देवरानी एक्सप्रेस सीवान",
+    "MAHARANAEXPRESS",
+    "Maharana Express",
+    "महाराणा एक्सप्रेस",
     "Restaurant in Siwan",
     "Best Restaurant Siwan Bihar",
     "Downtown City Square Mall Siwan",
@@ -19,24 +20,28 @@ export const metadata: Metadata = {
     "Paneer Butter Masala Siwan",
     "Family Restaurant Siwan",
     "Biryani in Siwan",
-    "Dal Devrana Siwan",
+    "Maharana Express Siwan",
   ],
   openGraph: {
-    title: "Devrana Express Siwan | Restaurant in Siwan",
+    title: "MAHARANAEXPRESS | Restaurant in Siwan",
     description:
-      "Devrana Express Siwan is a restaurant in Siwan, Bihar serving Indian cuisine including paneer dishes, dal, rice and biryani.",
+      "MAHARANAEXPRESS is a premier family restaurant in Siwan, Bihar serving authentic North Indian cuisine including paneer dishes, dal, rice and biryani at Downtown City Square Mall.",
     url: "https://maps.app.goo.gl/12Xte3H9UxxPRvQ69",
-    siteName: "Devrana Express Siwan",
+    siteName: "MAHARANAEXPRESS",
     images: [
       {
-        url: "/images/devrana-dining-hall.jpeg",
+        url: "/images/logo.jpeg",
         width: 1200,
         height: 800,
-        alt: "Devrana Express Siwan Restaurant",
+        alt: "Maharana Express Restaurant",
       },
     ],
     locale: "en_IN",
     type: "website",
+  },
+  icons: {
+    icon: "/images/logo.jpeg",
+    apple: "/images/logo.jpeg",
   },
   alternates: { canonical: "/" },
 };

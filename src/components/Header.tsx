@@ -12,15 +12,21 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="header">
-      <a href="#home" className="brand" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-        <div style={{ position: "relative", width: "42px", height: "42px", borderRadius: "50%", overflow: "hidden", border: "2px solid var(--brass)", flexShrink: 0 }}>
-          <Image src={images.logo} alt="Devrana Express Logo" fill style={{ objectFit: "cover" }} />
+      <div className="header-brand-group">
+        <a href="#home" className="brand">
+          <div className="brand-logo-wrap">
+            <Image src={images.logo} alt="Maharana Express Logo" fill sizes="44px" style={{ objectFit: "contain" }} />
+          </div>
+          <div className="brand-titles">
+            <span className="brand-name">Maharana Express</span>
+            <small className="brand-hindi">Siwan · {business.hindiName}</small>
+          </div>
+        </a>
+        <div className="header-location">
+          <span className="location-divider" aria-hidden="true">|</span>
+          <span className="location-text">SIWAN · BIHAR · DOWNTOWN CITY SQUARE MALL</span>
         </div>
-        <div style={{ display: "grid", gap: "2px" }}>
-          <span>Devrana Express</span>
-          <small>Siwan · {business.hindiName}</small>
-        </div>
-      </a>
+      </div>
       <nav>
         {links.map((link) => (
           <a key={link} href={link === "Home" ? "#home" : `#${link.toLowerCase()}`}>

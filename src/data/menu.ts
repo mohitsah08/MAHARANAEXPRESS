@@ -170,12 +170,12 @@ export const menuItems: MenuItem[] = [
     vegetarian: true,
   },
   {
-    name: "Dal Devrana",
-    hindiName: "दाल देवरानी",
+    name: "Dal Maharana",
+    hindiName: "दाल महाराणा",
     price: "₹320",
     description: "Chef's signature house specialty dal crafted with select lentils and royal spice tempering.",
     category: "DAL",
-    image: images.menu.dalDevrana,
+    image: images.menu.dalMaharana,
     vegetarian: true,
   },
   {

@@ -1,6 +1,6 @@
-# Devrana Express Siwan (देवरानी एक्सप्रेस सीवान)
+# MAHARANAEXPRESS
 
-Marketing and online presence website for Devrana Express Siwan, located at 2nd Floor, Tarwara More, Downtown City Square Mall, Siwan, Bihar 841226.
+Marketing and online presence website for Maharana Express, located at 2nd Floor, Tarwara More, Downtown City Square Mall, Siwan, Bihar 841226.
 
 ## Run locally
 

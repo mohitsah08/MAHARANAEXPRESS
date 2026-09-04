@@ -49,7 +49,7 @@ export default function Home() {
   };
 
   const whatsappBookingUrl = `https://wa.me/${business.whatsappNumber}?text=${encodeURIComponent(
-    "Hello Devrana Express Siwan, I would like to book a table. Please share the available timings."
+    `Hello Maharana Express, I would like to book a table. Please share the available timings.`
   )}`;
 
   return (
@@ -69,7 +69,7 @@ export default function Home() {
           src={images.hero}
           fill
           sizes="100vw"
-          alt="Devrana Express Siwan spacious restaurant dining hall"
+            alt="Maharana Express spacious restaurant dining hall"
         />
         <div className="hero-overlay" />
         <div className="hero-copy">
@@ -79,10 +79,10 @@ export default function Home() {
             <br />
             Served With Heart.
           </h1>
-          <p className="english-title">DEVRANA EXPRESS SIWAN · {business.hindiName}</p>
+          <p className="english-title">MAHARANA EXPRESS · {business.hindiName}</p>
           <p className="lede">
             Enjoy rich Indian flavours, comforting classics and freshly prepared
-            dishes at Devrana Express Siwan.
+            dishes at Maharana Express.
           </p>
           <div className="button-row">
             <a className="button primary" href="#booking">
@@ -144,7 +144,7 @@ export default function Home() {
             src={images.about}
             fill
             sizes="(max-width:800px) 100vw, 50vw"
-            alt="Warm atmosphere and comfortable dining at Devrana Express Siwan"
+            alt="Warm atmosphere and comfortable dining at Maharana Express"
           />
         </div>
         <div className="handi-copy">
@@ -198,7 +198,7 @@ export default function Home() {
           <br />
           Come Together
         </h2>
-        <p className="english-title">DEVRANA EXPRESS SIWAN · {business.hindiName}</p>
+        <p className="english-title">MAHARANA EXPRESS · {business.hindiName}</p>
       </section>
 
       {/* Gallery Section */}
@@ -211,7 +211,7 @@ export default function Home() {
               <br />
               Space
             </h2>
-            <p className="english-title">A LOOK INSIDE DEVRANA EXPRESS</p>
+            <p className="english-title">A LOOK INSIDE MAHARANA EXPRESS</p>
           </div>
           <p>
             Comfortable family dining, birthday and anniversary celebration
@@ -235,7 +235,7 @@ export default function Home() {
         <div className="reviews-copy">
           <h3>What guests appreciate</h3>
           <p>
-            Guests love our flavorful paneer specialties, authentic Dal Devrana,
+            Guests love our flavorful paneer specialties, authentic dal preparations,
             warm hospitality, and family-friendly ambiance in Downtown City Square
             Mall.
           </p>
@@ -323,7 +323,7 @@ export default function Home() {
         <div className="map">
           <iframe
             loading="lazy"
-            title="Devrana Express Siwan location"
+            title="Maharana Express location"
             src={mapEmbed}
           />
         </div>
@@ -335,11 +335,11 @@ export default function Home() {
           src={images.finalCta}
           fill
           sizes="100vw"
-          alt="Warm dining experience at Devrana Express Siwan"
+            alt="Warm dining experience at Maharana Express"
         />
         <div />
         <article>
-          <p className="eyebrow">DEVRANA EXPRESS SIWAN · DOWNTOWN CITY SQUARE MALL</p>
+          <p className="eyebrow">MAHARANA EXPRESS · DOWNTOWN CITY SQUARE MALL</p>
           <h2>Hungry?</h2>
           <p className="english-title">VISIT US TODAY</p>
           <p>
@@ -373,23 +373,25 @@ export default function Home() {
           <div
             style={{
               position: "relative",
-              width: "42px",
-              height: "42px",
+              width: "44px",
+              height: "44px",
               borderRadius: "50%",
               overflow: "hidden",
               border: "2px solid var(--brass)",
               flexShrink: 0,
+              backgroundColor: "#ffffff",
             }}
           >
             <Image
               src={images.logo}
-              alt="Devrana Express Logo"
+              alt="Maharana Express Logo"
               fill
-              style={{ objectFit: "cover" }}
+              sizes="44px"
+              style={{ objectFit: "contain" }}
             />
           </div>
           <div>
-            <span style={{ display: "block" }}>Devrana Express</span>
+            <span style={{ display: "block" }}>Maharana Express</span>
             <small>Siwan · {business.hindiName}</small>
           </div>
         </a>
@@ -421,8 +423,7 @@ export default function Home() {
           ))}
         </div>
         <small>
-          © {new Date().getFullYear()} Devrana Express Siwan (देवरानी एक्सप्रेस
-          सीवान) · All Rights Reserved
+          © {new Date().getFullYear()} Maharana Express (महाराणा एक्सप्रेस) · All Rights Reserved
         </small>
       </footer>
 

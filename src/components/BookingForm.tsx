@@ -25,7 +25,7 @@ const empty: Booking = {
 };
 
 const body = (d: Booking) =>
-  `Hello Devrana Express Siwan, I would like to book a table. Please share the available timings.\n\nBooking Details:\nName: ${d.name}\nPhone: ${d.phone}\nDate: ${d.date}\nTime: ${d.time}\nGuests: ${d.guests}\nPreference: ${d.preference || "Standard"}\nSpecial Request: ${d.request || "None"}\n\nPlease confirm my reservation.`;
+  `Hello Maharana Express, I would like to book a table. Please share the available timings.\n\nBooking Details:\nName: ${d.name}\nPhone: ${d.phone}\nDate: ${d.date}\nTime: ${d.time}\nGuests: ${d.guests}\nPreference: ${d.preference || "Standard"}\nSpecial Request: ${d.request || "None"}\n\nPlease confirm my reservation.`;
 
 export default function BookingForm() {
   const [data, setData] = useState(empty);
@@ -56,7 +56,7 @@ export default function BookingForm() {
     } else {
       track("email_booking_click");
       window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(
-        "Table Booking Request — Devrana Express Siwan"
+        "Table Booking Request — Maharana Express"
       )}&body=${encodeURIComponent(text)}`;
     }
     setMessage(

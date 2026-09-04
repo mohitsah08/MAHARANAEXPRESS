@@ -78,7 +78,7 @@ export default function MenuSection() {
               <span>{item.description}</span>
               <a
                 href={`https://wa.me/918809985776?text=${encodeURIComponent(
-                  `Hello Devrana Express Siwan, I would like to enquire about ordering ${item.name} (${item.price}).`
+                  `Hello Maharana Express, I would like to enquire about ordering ${item.name} (${item.price}).`
                 )}`}
                 target="_blank"
                 rel="noreferrer"

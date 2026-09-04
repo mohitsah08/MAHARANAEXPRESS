@@ -1,10 +1,10 @@
-export const BUSINESS_EMAIL = "contact@devranaexpress.com";
+export const BUSINESS_EMAIL = "contact@maharanaexpress.com";
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export const business = {
-  name: "Devrana Express Siwan",
-  hindiName: "देवरानी एक्सप्रेस सीवान",
-  shortName: "Devrana Express",
+  name: "Maharana Express",
+  hindiName: "महाराणा एक्सप्रेस",
+  shortName: "Maharana Express",
   phone: "088099 85776",
   phoneHref: "tel:08809985776",
   whatsappNumber: "918809985776",
