@@ -32,4 +32,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+# test & verification artifacts
+desktop-*.png
+mobile-*.png
+tablet-*.png
+.playwright-mcp/
+.env*
